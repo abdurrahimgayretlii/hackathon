@@ -1,0 +1,250 @@
+# HackStarter - Cursor AI Rules
+
+You are an expert Next.js 15 and React 19 developer working on a modern hackathon starter template called "HackStarter". Follow these rules for optimal development experience.
+
+## 🎯 Project Context
+
+This is a Next.js 15 hackathon starter template with:
+- **Framework**: Next.js 15 with App Router and Turbopack
+- **UI**: shadcn/ui components with Radix UI primitives
+- **Styling**: Tailwind CSS 4 with custom design system
+- **Theme**: Dark/Light mode with next-themes
+- **TypeScript**: Strict mode enabled
+- **Icons**: Lucide React
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── globals.css        # Global styles & Tailwind config
+│   ├── layout.tsx         # Root layout with providers
+│   └── page.tsx           # Landing page
+├── components/            # React components
+│   ├── ui/               # shadcn/ui components
+│   ├── navbar.tsx        # Navigation component
+│   ├── theme-provider.tsx # Theme context
+│   └── theme-toggle.tsx   # Dark/light toggle
+└── lib/
+    └── utils.ts          # Utility functions
+```
+
+## 🔧 Development Guidelines
+
+### Code Style & Standards
+- **Always use TypeScript** with strict typing
+- **Use functional components** with hooks
+- **Prefer const assertions** and proper typing
+- **Use semantic HTML** and accessible patterns
+- **Follow React 19 best practices** (use, server components)
+
+### Component Development
+- **Use shadcn/ui components** when available
+- **Follow the existing design system** (brand colors, spacing)
+- **Make components responsive** (mobile-first approach)
+- **Support dark/light themes** using CSS variables
+- **Use Lucide React icons** for consistency
+
+### File Naming
+- **Components**: PascalCase (e.g., `UserProfile.tsx`)
+- **Pages**: lowercase with hyphens (e.g., `user-profile/page.tsx`)
+- **Utilities**: camelCase (e.g., `formatDate.ts`)
+- **Types**: PascalCase with `.types.ts` suffix
+
+### Import Organization
+```typescript
+// 1. External libraries
+import React from 'react'
+import Link from 'next/link'
+
+// 2. Internal components
+import { Button } from '@/components/ui/button'
+import { Navbar } from '@/components/navbar'
+
+// 3. Utils and types
+import { cn } from '@/lib/utils'
+import type { User } from '@/types/user.types'
+```
+
+## 🎨 Design System
+
+### Colors
+Use the predefined color system:
+```css
+/* Brand Colors */
+brand-500, brand-600, brand-400 (primary)
+accent-custom-500, accent-custom-600 (secondary)
+
+/* Semantic Colors */
+background, foreground, muted, accent, destructive
+```
+
+### Components
+- **Use existing UI components** from `@/components/ui/`
+- **Extend components** using the `cn()` utility
+- **Follow responsive patterns** used in navbar and page components
+- **Implement proper loading states** and error handling
+
+### Styling Patterns
+```typescript
+// Conditional classes with cn()
+className={cn(
+  "base-classes",
+  {
+    "conditional-class": condition,
+    "variant-class": variant === "primary"
+  },
+  className // Allow external className override
+)}
+```
+
+## 🚀 Next.js 15 Specific
+
+### App Router
+- **Use server components by default**
+- **Add "use client"** only when necessary (hooks, events, state)
+- **Prefer server-side data fetching** with async components
+- **Use proper metadata** in layout.tsx files
+
+### Performance
+- **Optimize images** with next/image
+- **Use dynamic imports** for large components
+- **Implement proper caching** strategies
+- **Minimize client-side JavaScript** when possible
+
+### Routing
+- **Use file-based routing** in app directory
+- **Create loading.tsx** for loading states
+- **Create error.tsx** for error boundaries
+- **Use proper redirects** and metadata
+
+## 🧩 Component Patterns
+
+### Button Components
+```typescript
+<Button 
+  variant="default" 
+  size="lg" 
+  className="bg-brand-500 hover:bg-brand-600"
+>
+  Action
+</Button>
+```
+
+### Card Components
+```typescript
+<Card className="group hover:shadow-lg transition-shadow">
+  <CardHeader>
+    <CardTitle>Title</CardTitle>
+  </CardHeader>
+  <CardContent>
+    Content
+  </CardContent>
+</Card>
+```
+
+### Navigation Patterns
+- **Mobile-first responsive** navigation
+- **Use proper ARIA labels** for accessibility
+- **Implement keyboard navigation** support
+- **Support focus management**
+
+## 🔄 State Management
+
+### Local State
+- **Use useState** for component-level state
+- **Use useEffect** for side effects
+- **Use useCallback/useMemo** for optimization
+
+### Global State
+- **Use React Context** for theme state
+- **Consider Zustand** for complex state management
+- **Use server state** when possible
+
+## 📱 Responsive Design
+
+### Breakpoints
+```css
+sm: 640px   /* Small tablets */
+md: 768px   /* Tablets */
+lg: 1024px  /* Small laptops */
+xl: 1280px  /* Large screens */
+2xl: 1536px /* Extra large */
+```
+
+### Mobile-First Approach
+```typescript
+className="
+  text-sm md:text-base lg:text-lg
+  p-4 md:p-6 lg:p-8
+  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+"
+```
+
+## 🎯 Hackathon-Specific Features
+
+### Quick Prototyping
+- **Use placeholder content** during development
+- **Implement MVP features** first
+- **Add polish incrementally**
+- **Focus on core functionality**
+
+### Common Patterns
+- **Landing pages** with hero sections
+- **Feature showcases** with cards
+- **Contact forms** with validation
+- **Dashboard layouts** with navigation
+
+## 🚨 Common Pitfalls to Avoid
+
+1. **Don't use 'use client'** unnecessarily
+2. **Don't override Tailwind** with custom CSS unless required
+3. **Don't ignore TypeScript** errors
+4. **Don't skip accessibility** considerations
+5. **Don't forget responsive** design
+6. **Don't hardcode colors** - use design system variables
+
+## 🔍 When Adding New Features
+
+1. **Check if shadcn/ui component exists** first
+2. **Follow existing file structure** and naming
+3. **Use TypeScript interfaces** for props
+4. **Add proper error handling** and loading states
+5. **Test responsive behavior** on multiple screens
+6. **Ensure dark/light theme** compatibility
+
+## 📝 Code Examples
+
+### Server Component (default)
+```typescript
+export default async function Page() {
+  const data = await fetchData()
+  
+  return (
+    <div className="container py-8">
+      <h1 className="text-3xl font-bold">Title</h1>
+      {/* Content */}
+    </div>
+  )
+}
+```
+
+### Client Component
+```typescript
+'use client'
+
+import { useState } from 'react'
+import { Button } from '@/components/ui/button'
+
+export function InteractiveComponent() {
+  const [count, setCount] = useState(0)
+  
+  return (
+    <Button onClick={() => setCount(c => c + 1)}>
+      Count: {count}
+    </Button>
+  )
+}
+```
+
+Remember: This is a hackathon starter template - prioritize speed of development while maintaining code quality and following established patterns.
