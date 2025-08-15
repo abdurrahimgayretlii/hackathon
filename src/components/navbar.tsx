@@ -51,7 +51,10 @@ export function Navbar() {
         
         {/* Mobile brand */}
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-          <div className="w-full flex-1 md:w-auto md:flex-none">
+            <Button
+              className="hidden md:inline-flex text-white"
+              style={{ backgroundColor: "#50C878" }}
+            >
             <Link className="mr-6 flex items-center space-x-2 md:hidden" href="/">
               <div className="h-6 w-6 rounded-full bg-brand-500"></div>
               <span className="font-bold text-brand-600 dark:text-brand-400">
@@ -71,7 +74,10 @@ export function Navbar() {
         </div>
       </div>
       
-      {/* Mobile menu */}
+              <Button
+                className="w-full text-white"
+                style={{ backgroundColor: "#50C878" }}
+              >
       {isMenuOpen && (
         <div className="fixed inset-0 top-14 z-50 grid h-[calc(100vh-3.5rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden bg-background">
           <div className="relative z-20 grid gap-6 rounded-md bg-background p-4 shadow-md">
