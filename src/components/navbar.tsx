@@ -56,7 +56,7 @@ export function Navbar() {
               <div className="h-6 w-6 rounded-full bg-brand-500"></div>
               <span className="font-bold text-brand-600 dark:text-brand-400">
                 HackStarter
-            <Button className="w-full" style={{ backgroundColor: '#50C878' }}>
+              </span>
             </Link>
           </div>
           <nav className="flex items-center gap-2">
