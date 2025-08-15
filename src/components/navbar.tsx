@@ -52,7 +52,7 @@ export function Navbar() {
                 HackStarter
               </span>
             </Link>
-          </div>
+            <Button className="w-full" style={{ backgroundColor: '#50C878' }}>
           <nav className="flex items-center gap-2">
             <Button variant="ghost" className="hidden md:inline-flex">
               Sign In
