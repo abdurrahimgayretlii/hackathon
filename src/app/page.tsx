@@ -31,7 +31,7 @@ export default function Home() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button variant="outline" size="lg">
-                View on GitHub
+                Go to GitHub
               </Button>
             </div>
             <div className="flex items-center space-x-4 text-sm text-muted-foreground pt-4">
