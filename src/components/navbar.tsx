@@ -61,7 +61,7 @@ export function Navbar() {
           </div>
           <nav className="flex items-center gap-2">
             <Button variant="ghost" className="hidden md:inline-flex">
-              Sign In
+            <ThemeToggle />
             </Button>
             <Button className="hidden md:inline-flex bg-brand-500 hover:bg-brand-600 text-white">
               Get Started
@@ -101,3 +101,4 @@ export function Navbar() {
     </header>
   )
 }
+              <Button className="w-full" style={{ backgroundColor: '#50C878' }}>
