@@ -1,17 +1,17 @@
-"use client"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { Menu, X } from "lucide-react"
-import { useState } from "react"
+"use client";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 export function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Features", href: "#features" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
-  ]
+  ];
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
@@ -46,7 +46,10 @@ export function Navbar() {
         {/* Mobile brand */}
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none">
-            <Link className="mr-6 flex items-center space-x-2 md:hidden" href="/">
+            <Link
+              className="mr-6 flex items-center space-x-2 md:hidden"
+              href="/"
+            >
               <div className="h-6 w-6 rounded-full bg-brand-500"></div>
               <span className="font-bold text-brand-600 dark:text-brand-400">
                 HackStarter
@@ -65,32 +68,6 @@ export function Navbar() {
         </div>
       </div>
       {/* Mobile menu */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 top-14 z-50 grid h-[calc(100vh-3.5rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden bg-background">
-          <div className="relative z-20 grid gap-6 rounded-md bg-background p-4 shadow-md">
-            <nav className="grid grid-flow-row auto-rows-max text-sm">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="flex w-full items-center rounded-md p-2 text-sm font-medium hover:underline"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </nav>
-            <div className="flex flex-col gap-2">
-              <Button variant="outline" className="w-full">
-                Sign In
-              </Button>
-              <Button className="w-full bg-brand-500 hover:bg-brand-600 text-white">
-                Get Started
-              </Button>
-            </div>
-          </div>
-        </div>
-      )}
     </header>
-  )
+  );
 }
