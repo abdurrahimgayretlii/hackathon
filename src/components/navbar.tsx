@@ -56,7 +56,7 @@ export function Navbar() {
               </span>
             </Link>
           </div>
-          <nav className="flex items-center gap-2">
+            <Button className="hidden md:inline-flex" style={{ backgroundColor: '#50C878' }}>
             <Button variant="ghost" className="hidden md:inline-flex">
               Sign In
             </Button>
