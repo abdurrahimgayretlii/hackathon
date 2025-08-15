@@ -1,102 +1,229 @@
-import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ArrowRight, Code, Zap, Shield, Palette, Moon, Sparkles } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col min-h-screen">
+      {/* Hero Section */}
+      <section className="flex-1 flex items-center justify-center px-4 py-12 md:py-24 lg:py-32">
+        <div className="container">
+          <div className="flex flex-col items-center space-y-4 text-center">
+            <div className="space-y-2">
+              <Badge variant="secondary" className="mb-4">
+                <Sparkles className="h-3 w-3 mr-1" />
+                Ready for Hackathons
+              </Badge>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                Build Amazing Projects with{" "}
+                <span className="text-brand-500 dark:text-brand-400">HackStarter</span>
+              </h1>
+              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                The ultimate Next.js 15 starter template designed for hackathons. 
+                Pre-configured with Tailwind CSS, shadcn/ui, dark mode, and everything you need to ship fast.
+              </p>
+            </div>
+            <div className="space-x-4">
+              <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white">
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+              <Button variant="outline" size="lg">
+                View on GitHub
+              </Button>
+            </div>
+            <div className="flex items-center space-x-4 text-sm text-muted-foreground pt-4">
+              <div className="flex items-center">
+                <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                TypeScript
+              </div>
+              <div className="flex items-center">
+                <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+                Next.js 15
+              </div>
+              <div className="flex items-center">
+                <div className="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
+                Tailwind CSS
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="py-12 md:py-24 lg:py-32 bg-muted/50">
+        <div className="container">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Everything You Need to Win
+              </h2>
+              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Pre-built components, modern design system, and developer experience optimized for rapid prototyping.
+              </p>
+            </div>
+          </div>
+          <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2">
+                  <div className="p-2 bg-brand-100 dark:bg-brand-900 rounded-lg">
+                    <Code className="h-6 w-6 text-brand-600 dark:text-brand-400" />
+                  </div>
+                  <CardTitle>Modern Stack</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Built with Next.js 15, TypeScript, and Tailwind CSS. App Router, server components, 
+                  and modern React patterns out of the box.
+                </CardDescription>
+              </CardContent>
+            </Card>
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2">
+                  <div className="p-2 bg-accent-custom-100 dark:bg-accent-custom-900 rounded-lg">
+                    <Zap className="h-6 w-6 text-accent-custom-600 dark:text-accent-custom-400" />
+                  </div>
+                  <CardTitle>Ship Fast</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Pre-configured with shadcn/ui components, responsive layouts, and optimized build setup. 
+                  Focus on your idea, not the boilerplate.
+                </CardDescription>
+              </CardContent>
+            </Card>
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2">
+                  <div className="p-2 bg-green-100 dark:bg-green-900 rounded-lg">
+                    <Shield className="h-6 w-6 text-green-600 dark:text-green-400" />
+                  </div>
+                  <CardTitle>Production Ready</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  ESLint configuration, TypeScript strict mode, and performance optimizations. 
+                  Ready for deployment from day one.
+                </CardDescription>
+              </CardContent>
+            </Card>
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2">
+                  <div className="p-2 bg-purple-100 dark:bg-purple-900 rounded-lg">
+                    <Palette className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                  </div>
+                  <CardTitle>Beautiful Design</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Extended color palette, responsive design system, and carefully crafted components 
+                  that look great out of the box.
+                </CardDescription>
+              </CardContent>
+            </Card>
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2">
+                  <div className="p-2 bg-yellow-100 dark:bg-yellow-900 rounded-lg">
+                    <Moon className="h-6 w-6 text-yellow-600 dark:text-yellow-400" />
+                  </div>
+                  <CardTitle>Dark Mode</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Built-in dark mode support with next-themes. Seamless theme switching with 
+                  system preference detection.
+                </CardDescription>
+              </CardContent>
+            </Card>
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-2">
+                  <div className="p-2 bg-orange-100 dark:bg-orange-900 rounded-lg">
+                    <Sparkles className="h-6 w-6 text-orange-600 dark:text-orange-400" />
+                  </div>
+                  <CardTitle>Developer Experience</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Hot reload, TypeScript intellisense, auto-formatting, and optimized bundling. 
+                  Spend time building, not configuring.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-12 md:py-24 lg:py-32">
+        <div className="container">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Ready to Start Building?
+              </h2>
+              <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Get started with HackStarter today and turn your ideas into reality faster than ever.
+              </p>
+            </div>
+            <div className="space-x-4">
+              <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white">
+                Clone Repository
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+              <Button variant="outline" size="lg">
+                Documentation
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t">
+        <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
+          <div className="flex flex-col items-center gap-4 md:flex-row md:gap-2">
+            <Link className="flex items-center space-x-2" href="/">
+              <div className="h-6 w-6 rounded-full bg-brand-500"></div>
+              <span className="font-bold text-brand-600 dark:text-brand-400">HackStarter</span>
+            </Link>
+            <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
+              Built for hackathons. Made with ❤️ for developers.
+            </p>
+          </div>
+          <div className="flex items-center space-x-4">
+            <Link
+              href="#"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+            >
+              GitHub
+            </Link>
+            <Link
+              href="#"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+            >
+              Documentation
+            </Link>
+            <Link
+              href="#"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+            >
+              Support
+            </Link>
+          </div>
+        </div>
       </footer>
     </div>
   );
