@@ -60,7 +60,7 @@ export function Navbar() {
             <Button variant="ghost" className="hidden md:inline-flex">
               Sign In
             </Button>
-            <Button className="hidden md:inline-flex" style={{ backgroundColor: '#FEFEFE' }}>
+            <Button className="hidden md:inline-flex" style={{ backgroundColor: '#FBFBFB' }}>
               Get Started
             </Button>
             <ThemeToggle />
