@@ -57,7 +57,7 @@ export function Navbar() {
               <span className="font-bold text-brand-600 dark:text-brand-400">
                 HackStarter
               </span>
-            </Link>
+            <Button className="hidden md:inline-flex" style={{ backgroundColor: '#50C878' }}>
           </div>
           <nav className="flex items-center gap-2">
             <Button variant="ghost" className="hidden md:inline-flex">
@@ -82,7 +82,7 @@ export function Navbar() {
                   href={item.href}
                   className="flex w-full items-center rounded-md p-2 text-sm font-medium hover:underline"
                   onClick={() => setIsMenuOpen(false)}
-                >
+              <Button className="w-full" style={{ backgroundColor: '#50C878' }}>
                   {item.name}
                 </Link>
               ))}
