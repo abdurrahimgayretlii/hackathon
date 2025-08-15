@@ -52,7 +52,7 @@ export function Navbar() {
         {/* Mobile brand */}
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none">
-            <Link className="mr-6 flex items-center space-x-2 md:hidden" href="/">
+            <Button className="hidden md:inline-flex bg-[#50C878] hover:bg-[#50C878] text-white">
               <div className="h-6 w-6 rounded-full bg-brand-500"></div>
               <span className="font-bold text-brand-600 dark:text-brand-400">
                 HackStarter
@@ -73,7 +73,7 @@ export function Navbar() {
       
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="fixed inset-0 top-14 z-50 grid h-[calc(100vh-3.5rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden bg-background">
+              <Button className="w-full bg-[#50C878] hover:bg-[#50C878] text-white">
           <div className="relative z-20 grid gap-6 rounded-md bg-background p-4 shadow-md">
             <nav className="grid grid-flow-row auto-rows-max text-sm">
               {navigation.map((item) => (
