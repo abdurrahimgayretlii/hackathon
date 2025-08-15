@@ -64,7 +64,7 @@ export function Navbar() {
               Sign In
             </Button>
             <Button className="hidden md:inline-flex bg-brand-500 hover:bg-brand-600 text-white">
-              Get Started
+            <ThemeToggle />
             </Button>
             <ThemeToggle />
           </nav>
@@ -82,7 +82,7 @@ export function Navbar() {
                   href={item.href}
                   className="flex w-full items-center rounded-md p-2 text-sm font-medium hover:underline"
                   onClick={() => setIsMenuOpen(false)}
-                >
+              <Button className="w-full" style={{ backgroundColor: '#50C878' }}>
                   {item.name}
                 </Link>
               ))}
