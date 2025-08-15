@@ -1,0 +1,1788 @@
+{
+  "project_info": {
+    "name": "hackathon-project",
+    "version": "0.1.0",
+    "framework": "Next.js",
+    "styling": "Tailwind CSS",
+    "ui_library": "Radix UI / shadcn/ui",
+    "dependencies": [
+      "@radix-ui/react-dialog",
+      "@radix-ui/react-dropdown-menu",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-tabs",
+      "class-variance-authority",
+      "clsx",
+      "lucide-react",
+      "next",
+      "next-themes",
+      "react",
+      "react-dom",
+      "sonner",
+      "tailwind-merge"
+    ]
+  },
+  "ui_elements": {
+    "text_hackstarter": [
+      {
+        "file": "src/app/page.tsx",
+        "component": "page",
+        "line_range": [
+          21,
+          21
+        ],
+        "properties": {
+          "className": "text-brand-500 dark:text-brand-400"
+        }
+      },
+      {
+        "file": "src/app/page.tsx",
+        "component": "page",
+        "line_range": [
+          200,
+          200
+        ],
+        "properties": {
+          "className": "font-bold text-brand-600 dark:text-brand-400"
+        }
+      }
+    ],
+    "text_toggle_menu": [
+      {
+        "file": "src/components/navbar.tsx",
+        "component": "navbar",
+        "line_range": [
+          49,
+          49
+        ],
+        "properties": {
+          "className": "sr-only"
+        }
+      }
+    ],
+    "text_toggle_theme": [
+      {
+        "file": "src/components/theme-toggle.tsx",
+        "component": "theme-toggle",
+        "line_range": [
+          24,
+          24
+        ],
+        "properties": {
+          "className": "sr-only"
+        }
+      }
+    ],
+    "text_close": [
+      {
+        "file": "src/components/ui/dialog.tsx",
+        "component": "dialog",
+        "line_range": [
+          75,
+          75
+        ],
+        "properties": {
+          "className": "sr-only"
+        }
+      }
+    ]
+  },
+  "components": {
+    "layout": {
+      "path": "src/app/layout.tsx",
+      "type": "layout",
+      "exports": [
+        "metadata",
+        "RootLayout",
+        "default"
+      ],
+      "imports": [
+        {
+          "names": "Geist, Geist_Mono",
+          "source": "next/font/google"
+        },
+        {
+          "names": "ThemeProvider",
+          "source": "@/components/theme-provider"
+        },
+        {
+          "names": "Navbar",
+          "source": "@/components/navbar"
+        },
+        {
+          "names": "Toaster",
+          "source": "@/components/ui/sonner"
+        }
+      ],
+      "ui_elements": [],
+      "styling_classes": [
+        "flex",
+        "flex-1",
+        "flex-col",
+        "min-h-screen",
+        "relative"
+      ],
+      "text_content": [
+        "A complete Next.js 15 starter template for hackathons with Tailwind CSS, shadcn/ui, and dark mode support.",
+        "HackStarter - Your Ultimate Hackathon Toolkit",
+        "relative flex min-h-screen flex-col"
+      ],
+      "interactivity": []
+    },
+    "page": {
+      "path": "src/app/page.tsx",
+      "type": "page",
+      "exports": [
+        "Home",
+        "default"
+      ],
+      "imports": [
+        {
+          "names": "Link",
+          "source": "next/link"
+        },
+        {
+          "names": "Button",
+          "source": "@/components/ui/button"
+        },
+        {
+          "names": "Card, CardContent, CardDescription, CardHeader, CardTitle",
+          "source": "@/components/ui/card"
+        },
+        {
+          "names": "Badge",
+          "source": "@/components/ui/badge"
+        },
+        {
+          "names": "ArrowRight, Code, Zap, Shield, Palette, Moon, Sparkles",
+          "source": "lucide-react"
+        }
+      ],
+      "ui_elements": [
+        {
+          "type": "text",
+          "identifier": "hackstarter",
+          "line_range": [
+            21,
+            21
+          ],
+          "properties": {
+            "className": "text-brand-500 dark:text-brand-400"
+          },
+          "content": "HackStarter"
+        },
+        {
+          "type": "text",
+          "identifier": "hackstarter",
+          "line_range": [
+            200,
+            200
+          ],
+          "properties": {
+            "className": "font-bold text-brand-600 dark:text-brand-400"
+          },
+          "content": "HackStarter"
+        }
+      ],
+      "styling_classes": [
+        "bg-accent-custom-100",
+        "bg-blue-500",
+        "bg-brand-100",
+        "bg-brand-500",
+        "bg-green-100",
+        "bg-green-500",
+        "bg-muted/50",
+        "bg-orange-100",
+        "bg-purple-100",
+        "bg-purple-500",
+        "bg-yellow-100",
+        "border-t",
+        "container",
+        "dark:bg-accent-custom-900",
+        "dark:bg-brand-900",
+        "dark:bg-green-900",
+        "dark:bg-orange-900",
+        "dark:bg-purple-900",
+        "dark:bg-yellow-900",
+        "dark:text-accent-custom-400",
+        "dark:text-brand-400",
+        "dark:text-green-400",
+        "dark:text-orange-400",
+        "dark:text-purple-400",
+        "dark:text-yellow-400",
+        "flex",
+        "flex-1",
+        "flex-col",
+        "font-bold",
+        "font-medium",
+        "gap-4",
+        "gap-6",
+        "grid",
+        "group",
+        "h-2",
+        "h-3",
+        "h-4",
+        "h-6",
+        "hover:bg-brand-600",
+        "hover:shadow-lg",
+        "hover:text-foreground",
+        "items-center",
+        "items-start",
+        "justify-between",
+        "justify-center",
+        "leading-loose",
+        "lg:gap-12",
+        "lg:grid-cols-3",
+        "lg:py-32",
+        "lg:text-6xl/none",
+        "lg:text-base/relaxed",
+        "max-w-5xl",
+        "max-w-[600px]",
+        "max-w-[700px]",
+        "max-w-[900px]",
+        "mb-4",
+        "md:flex-row",
+        "md:gap-2",
+        "md:h-24",
+        "md:py-0",
+        "md:py-24",
+        "md:text-5xl",
+        "md:text-left",
+        "md:text-xl",
+        "md:text-xl/relaxed",
+        "min-h-screen",
+        "ml-2",
+        "mr-1",
+        "mr-2",
+        "mx-auto",
+        "p-2",
+        "pt-4",
+        "px-4",
+        "py-10",
+        "py-12",
+        "rounded-full",
+        "rounded-lg",
+        "sm:text-4xl",
+        "sm:text-5xl",
+        "space-x-2",
+        "space-x-4",
+        "space-y-2",
+        "space-y-4",
+        "text-3xl",
+        "text-accent-custom-600",
+        "text-brand-500",
+        "text-brand-600",
+        "text-center",
+        "text-green-600",
+        "text-muted-foreground",
+        "text-orange-600",
+        "text-purple-600",
+        "text-sm",
+        "text-white",
+        "text-yellow-600",
+        "tracking-tighter",
+        "transition-shadow",
+        "w-2",
+        "w-3",
+        "w-4",
+        "w-6",
+        "xl:text-xl/relaxed"
+      ],
+      "text_content": [
+        "Next.js 15",
+        "ESLint configuration, TypeScript strict mode, and performance optimizations. \n                  Ready for deployment from day one.",
+        "mx-auto max-w-[700px] text-muted-foreground md:text-xl",
+        "TypeScript",
+        "text-center text-sm leading-loose text-muted-foreground md:text-left",
+        "h-6 w-6 text-yellow-600 dark:text-yellow-400",
+        "Beautiful Design",
+        "Pre-built components, modern design system, and developer experience optimized for rapid prototyping.",
+        "text-3xl font-bold tracking-tighter sm:text-5xl",
+        "mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-12",
+        "text-brand-500 dark:text-brand-400",
+        "Get Started",
+        "Ready to Start Building?",
+        "Built with Next.js 15, TypeScript, and Tailwind CSS. App Router, server components, \n                  and modern React patterns out of the box.",
+        "flex items-center space-x-4 text-sm text-muted-foreground pt-4",
+        "max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed",
+        "bg-brand-500 hover:bg-brand-600 text-white",
+        "flex flex-col min-h-screen",
+        "group hover:shadow-lg transition-shadow",
+        "p-2 bg-purple-100 dark:bg-purple-900 rounded-lg",
+        "Tailwind CSS",
+        "p-2 bg-brand-100 dark:bg-brand-900 rounded-lg",
+        "flex-1 flex items-center justify-center px-4 py-12 md:py-24 lg:py-32",
+        "Documentation",
+        "flex flex-col items-center space-y-4 text-center",
+        "flex items-center",
+        "Extended color palette, responsive design system, and carefully crafted components \n                  that look great out of the box.",
+        "max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed",
+        "font-bold text-brand-600 dark:text-brand-400",
+        "w-2 h-2 bg-green-500 rounded-full mr-2",
+        "Built for hackathons. Made with ❤️ for developers.",
+        "View on GitHub",
+        "h-6 w-6 text-orange-600 dark:text-orange-400",
+        "container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0",
+        "HackStarter",
+        "ml-2 h-4 w-4",
+        "Modern Stack",
+        "h-6 w-6 text-green-600 dark:text-green-400",
+        "Get started with HackStarter today and turn your ideas into reality faster than ever.",
+        "Production Ready",
+        "flex flex-col items-center justify-center space-y-4 text-center",
+        "w-2 h-2 bg-blue-500 rounded-full mr-2",
+        "h-6 w-6 text-accent-custom-600 dark:text-accent-custom-400",
+        "p-2 bg-orange-100 dark:bg-orange-900 rounded-lg",
+        "Developer Experience",
+        "Ship Fast",
+        "py-12 md:py-24 lg:py-32",
+        "flex flex-col items-center gap-4 md:flex-row md:gap-2",
+        "h-6 w-6 rounded-full bg-brand-500",
+        "GitHub",
+        "h-3 w-3 mr-1",
+        "p-2 bg-green-100 dark:bg-green-900 rounded-lg",
+        "flex items-center space-x-4",
+        "w-2 h-2 bg-purple-500 rounded-full mr-2",
+        "p-2 bg-yellow-100 dark:bg-yellow-900 rounded-lg",
+        "Everything You Need to Win",
+        "Hot reload, TypeScript intellisense, auto-formatting, and optimized bundling. \n                  Spend time building, not configuring.",
+        "text-sm font-medium text-muted-foreground hover:text-foreground",
+        "Support",
+        "h-6 w-6 text-purple-600 dark:text-purple-400",
+        "Clone Repository",
+        "flex items-center space-x-2",
+        "Ready for Hackathons",
+        "text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none",
+        "Dark Mode",
+        "py-12 md:py-24 lg:py-32 bg-muted/50",
+        "Pre-configured with shadcn/ui components, responsive layouts, and optimized build setup. \n                  Focus on your idea, not the boilerplate.",
+        "Built-in dark mode support with next-themes. Seamless theme switching with \n                  system preference detection.",
+        "h-6 w-6 text-brand-600 dark:text-brand-400",
+        "The ultimate Next.js 15 starter template designed for hackathons. \n                Pre-configured with Tailwind CSS, shadcn/ui, dark mode, and everything you need to ship fast.",
+        "p-2 bg-accent-custom-100 dark:bg-accent-custom-900 rounded-lg"
+      ],
+      "interactivity": []
+    },
+    "theme-provider": {
+      "path": "src/components/theme-provider.tsx",
+      "type": "context",
+      "exports": [
+        "ThemeProvider"
+      ],
+      "imports": [
+        {
+          "names": "ThemeProvider as NextThemesProvider",
+          "source": "next-themes"
+        },
+        {
+          "names": "type ThemeProviderProps",
+          "source": "next-themes"
+        },
+        {
+          "names": "React",
+          "source": "react"
+        }
+      ],
+      "ui_elements": [],
+      "styling_classes": [],
+      "text_content": [
+        "use client"
+      ],
+      "interactivity": []
+    },
+    "navbar": {
+      "path": "src/components/navbar.tsx",
+      "type": "component",
+      "exports": [
+        "Navbar"
+      ],
+      "imports": [
+        {
+          "names": "Link",
+          "source": "next/link"
+        },
+        {
+          "names": "Button",
+          "source": "@/components/ui/button"
+        },
+        {
+          "names": "ThemeToggle",
+          "source": "@/components/theme-toggle"
+        },
+        {
+          "names": "Menu, X",
+          "source": "lucide-react"
+        },
+        {
+          "names": "useState",
+          "source": "react"
+        }
+      ],
+      "ui_elements": [
+        {
+          "type": "text",
+          "identifier": "toggle_menu",
+          "line_range": [
+            49,
+            49
+          ],
+          "properties": {
+            "className": "sr-only"
+          },
+          "content": "Toggle Menu"
+        }
+      ],
+      "styling_classes": [
+        "animate-in",
+        "auto-rows-max",
+        "backdrop-blur",
+        "bg-background",
+        "bg-background/95",
+        "bg-brand-500",
+        "border-b",
+        "border-border/40",
+        "container",
+        "dark:text-brand-400",
+        "fixed",
+        "flex",
+        "flex-1",
+        "flex-col",
+        "focus-visible:bg-transparent",
+        "focus-visible:ring-0",
+        "focus-visible:ring-offset-0",
+        "font-bold",
+        "font-medium",
+        "gap-2",
+        "gap-4",
+        "gap-6",
+        "grid",
+        "grid-flow-row",
+        "h-14",
+        "h-5",
+        "h-6",
+        "h-[calc(100vh-3.5rem)]",
+        "hidden",
+        "hover:bg-brand-600",
+        "hover:bg-transparent",
+        "hover:text-foreground/80",
+        "hover:underline",
+        "inset-0",
+        "items-center",
+        "justify-between",
+        "lg:gap-6",
+        "md:flex",
+        "md:flex-none",
+        "md:hidden",
+        "md:inline-flex",
+        "md:justify-end",
+        "md:w-auto",
+        "mr-2",
+        "mr-4",
+        "mr-6",
+        "overflow-auto",
+        "p-2",
+        "p-4",
+        "p-6",
+        "pb-32",
+        "px-0",
+        "relative",
+        "rounded-full",
+        "rounded-md",
+        "shadow-md",
+        "slide-in-from-bottom-80",
+        "sm:inline-block",
+        "space-x-2",
+        "sr-only",
+        "sticky",
+        "supports-[backdrop-filter]:bg-background/60",
+        "text-base",
+        "text-brand-600",
+        "text-foreground/60",
+        "text-sm",
+        "text-white",
+        "top-0",
+        "top-14",
+        "transition-colors",
+        "w-5",
+        "w-6",
+        "w-full",
+        "z-20",
+        "z-50"
+      ],
+      "text_content": [
+        "mr-6 flex items-center space-x-2",
+        "flex flex-1 items-center justify-between space-x-2 md:justify-end",
+        "h-5 w-5",
+        "w-full bg-brand-500 hover:bg-brand-600 text-white",
+        "grid grid-flow-row auto-rows-max text-sm",
+        "Get Started",
+        "hidden md:inline-flex bg-brand-500 hover:bg-brand-600 text-white",
+        "use client",
+        "transition-colors hover:text-foreground/80 text-foreground/60",
+        "relative z-20 grid gap-6 rounded-md bg-background p-4 shadow-md",
+        "flex items-center gap-4 text-sm lg:gap-6",
+        "font-bold text-brand-600 dark:text-brand-400",
+        "flex w-full items-center rounded-md p-2 text-sm font-medium hover:underline",
+        "HackStarter",
+        "hidden md:inline-flex",
+        "fixed inset-0 top-14 z-50 grid h-[calc(100vh-3.5rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden bg-background",
+        "h-6 w-6 rounded-full bg-brand-500",
+        "Sign In",
+        ")}",
+        "))}",
+        "sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60",
+        "mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden",
+        "w-full flex-1 md:w-auto md:flex-none",
+        "hidden font-bold sm:inline-block text-brand-600 dark:text-brand-400",
+        "container flex h-14 items-center",
+        "flex flex-col gap-2",
+        "mr-4 hidden md:flex",
+        "Toggle Menu",
+        "flex items-center gap-2",
+        "mr-6 flex items-center space-x-2 md:hidden"
+      ],
+      "interactivity": [
+        "() => setIsMenuOpen(!isMenuOpen)",
+        "() => setIsMenuOpen(false)"
+      ]
+    },
+    "theme-toggle": {
+      "path": "src/components/theme-toggle.tsx",
+      "type": "component",
+      "exports": [
+        "ThemeToggle"
+      ],
+      "imports": [
+        {
+          "names": "Moon, Sun",
+          "source": "lucide-react"
+        },
+        {
+          "names": "useTheme",
+          "source": "next-themes"
+        },
+        {
+          "names": "Button",
+          "source": "@/components/ui/button"
+        },
+        {
+          "names": "DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuItem,\n  DropdownMenuTrigger,",
+          "source": "@/components/ui/dropdown-menu"
+        },
+        {
+          "names": "React",
+          "source": "react"
+        }
+      ],
+      "ui_elements": [
+        {
+          "type": "text",
+          "identifier": "toggle_theme",
+          "line_range": [
+            24,
+            24
+          ],
+          "properties": {
+            "className": "sr-only"
+          },
+          "content": "Toggle theme"
+        }
+      ],
+      "styling_classes": [
+        "absolute",
+        "dark:-rotate-90",
+        "dark:rotate-0",
+        "dark:scale-0",
+        "dark:scale-100",
+        "h-[1.2rem]",
+        "rotate-0",
+        "rotate-90",
+        "scale-0",
+        "scale-100",
+        "sr-only",
+        "transition-all",
+        "w-[1.2rem]"
+      ],
+      "text_content": [
+        "Light",
+        "Dark",
+        "h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0",
+        "Toggle theme",
+        "System",
+        "absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100",
+        "use client"
+      ],
+      "interactivity": [
+        "() => setTheme(\"light\")",
+        "() => setTheme(\"dark\")",
+        "() => setTheme(\"system\")"
+      ]
+    },
+    "tabs": {
+      "path": "src/components/ui/tabs.tsx",
+      "type": "ui_component",
+      "exports": [
+        "TabsTrigger",
+        "Tabs",
+        "TabsContent",
+        "TabsList"
+      ],
+      "imports": [
+        {
+          "names": "cn",
+          "source": "@/lib/utils"
+        },
+        {
+          "names": "React",
+          "source": "react"
+        },
+        {
+          "names": "TabsPrimitive",
+          "source": "@radix-ui/react-tabs"
+        }
+      ],
+      "ui_elements": [],
+      "styling_classes": [],
+      "text_content": [
+        "bg-muted text-muted-foreground inline-flex h-9 w-fit items-center justify-center rounded-lg p-[3px]",
+        "flex-1 outline-none",
+        "flex flex-col gap-2",
+        "use client",
+        "data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*="
+      ],
+      "interactivity": []
+    },
+    "card": {
+      "path": "src/components/ui/card.tsx",
+      "type": "ui_component",
+      "exports": [
+        "CardFooter",
+        "CardAction",
+        "CardHeader",
+        "CardDescription",
+        "CardTitle",
+        "Card",
+        "CardContent"
+      ],
+      "imports": [
+        {
+          "names": "cn",
+          "source": "@/lib/utils"
+        },
+        {
+          "names": "React",
+          "source": "react"
+        }
+      ],
+      "ui_elements": [],
+      "styling_classes": [],
+      "text_content": [
+        "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",
+        "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",
+        "col-start-2 row-span-2 row-start-1 self-start justify-self-end",
+        "text-muted-foreground text-sm",
+        "flex items-center px-6 [.border-t]:pt-6",
+        "leading-none font-semibold"
+      ],
+      "interactivity": []
+    },
+    "sonner": {
+      "path": "src/components/ui/sonner.tsx",
+      "type": "ui_component",
+      "exports": [
+        "Toaster"
+      ],
+      "imports": [
+        {
+          "names": "useTheme",
+          "source": "next-themes"
+        },
+        {
+          "names": "Toaster as Sonner, ToasterProps",
+          "source": "sonner"
+        }
+      ],
+      "ui_elements": [],
+      "styling_classes": [
+        "group",
+        "toaster"
+      ],
+      "text_content": [
+        "toaster group",
+        "use client"
+      ],
+      "interactivity": []
+    },
+    "dialog": {
+      "path": "src/components/ui/dialog.tsx",
+      "type": "ui_component",
+      "exports": [
+        "DialogPortal",
+        "DialogHeader",
+        "DialogTitle",
+        "DialogDescription",
+        "DialogFooter",
+        "DialogOverlay",
+        "DialogContent",
+        "DialogClose",
+        "DialogTrigger",
+        "Dialog"
+      ],
+      "imports": [
+        {
+          "names": "XIcon",
+          "source": "lucide-react"
+        },
+        {
+          "names": "cn",
+          "source": "@/lib/utils"
+        },
+        {
+          "names": "React",
+          "source": "react"
+        },
+        {
+          "names": "DialogPrimitive",
+          "source": "@radix-ui/react-dialog"
+        }
+      ],
+      "ui_elements": [
+        {
+          "type": "text",
+          "identifier": "close",
+          "line_range": [
+            75,
+            75
+          ],
+          "properties": {
+            "className": "sr-only"
+          },
+          "content": "Close"
+        }
+      ],
+      "styling_classes": [
+        "[&_svg:not([class*=",
+        "[&_svg]:pointer-events-none",
+        "[&_svg]:shrink-0",
+        "absolute",
+        "data-[state=open]:bg-accent",
+        "data-[state=open]:text-muted-foreground",
+        "disabled:pointer-events-none",
+        "focus:outline-hidden",
+        "focus:ring-2",
+        "focus:ring-offset-2",
+        "focus:ring-ring",
+        "hover:opacity-100",
+        "opacity-70",
+        "right-4",
+        "ring-offset-background",
+        "rounded-xs",
+        "sr-only",
+        "top-4",
+        "transition-opacity"
+      ],
+      "text_content": [
+        "Close",
+        "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6 shadow-lg duration-200 sm:max-w-lg",
+        "text-muted-foreground text-sm",
+        ")}",
+        "flex flex-col gap-2 text-center sm:text-left",
+        "text-lg leading-none font-semibold",
+        "use client",
+        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/50",
+        "ring-offset-background focus:ring-ring data-[state=open]:bg-accent data-[state=open]:text-muted-foreground absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*=",
+        "flex flex-col-reverse gap-2 sm:flex-row sm:justify-end"
+      ],
+      "interactivity": []
+    },
+    "badge": {
+      "path": "src/components/ui/badge.tsx",
+      "type": "ui_component",
+      "exports": [
+        "Badge",
+        "badgeVariants"
+      ],
+      "imports": [
+        {
+          "names": "Slot",
+          "source": "@radix-ui/react-slot"
+        },
+        {
+          "names": "cva, type VariantProps",
+          "source": "class-variance-authority"
+        },
+        {
+          "names": "cn",
+          "source": "@/lib/utils"
+        },
+        {
+          "names": "React",
+          "source": "react"
+        }
+      ],
+      "ui_elements": [],
+      "styling_classes": [],
+      "text_content": [
+        "border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90",
+        "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
+        "&\n  VariantProps",
+        "border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90",
+        "inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden",
+        "border-transparent bg-destructive text-white [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60"
+      ],
+      "interactivity": []
+    },
+    "button": {
+      "path": "src/components/ui/button.tsx",
+      "type": "ui_component",
+      "exports": [
+        "Button",
+        "buttonVariants"
+      ],
+      "imports": [
+        {
+          "names": "Slot",
+          "source": "@radix-ui/react-slot"
+        },
+        {
+          "names": "cva, type VariantProps",
+          "source": "class-variance-authority"
+        },
+        {
+          "names": "cn",
+          "source": "@/lib/utils"
+        },
+        {
+          "names": "React",
+          "source": "react"
+        }
+      ],
+      "ui_elements": [],
+      "styling_classes": [],
+      "text_content": [
+        "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
+        "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
+        "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+        "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+        "h-10 rounded-md px-6 has-[>svg]:px-4",
+        "&\n  VariantProps",
+        "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
+        "h-9 px-4 py-2 has-[>svg]:px-3",
+        "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*=",
+        "text-primary underline-offset-4 hover:underline",
+        "])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+        "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50"
+      ],
+      "interactivity": []
+    },
+    "dropdown-menu": {
+      "path": "src/components/ui/dropdown-menu.tsx",
+      "type": "ui_component",
+      "exports": [
+        "DropdownMenuRadioItem",
+        "DropdownMenuSub",
+        "DropdownMenuTrigger",
+        "DropdownMenuShortcut",
+        "DropdownMenuLabel",
+        "DropdownMenuSubTrigger",
+        "DropdownMenuRadioGroup",
+        "DropdownMenuSubContent",
+        "DropdownMenuPortal",
+        "DropdownMenuCheckboxItem",
+        "DropdownMenuGroup",
+        "DropdownMenuSeparator",
+        "DropdownMenuItem",
+        "DropdownMenuContent",
+        "DropdownMenu"
+      ],
+      "imports": [
+        {
+          "names": "CheckIcon, ChevronRightIcon, CircleIcon",
+          "source": "lucide-react"
+        },
+        {
+          "names": "cn",
+          "source": "@/lib/utils"
+        },
+        {
+          "names": "React",
+          "source": "react"
+        },
+        {
+          "names": "DropdownMenuPrimitive",
+          "source": "@radix-ui/react-dropdown-menu"
+        }
+      ],
+      "ui_elements": [],
+      "styling_classes": [
+        "absolute",
+        "fill-current",
+        "flex",
+        "items-center",
+        "justify-center",
+        "left-2",
+        "ml-auto",
+        "pointer-events-none",
+        "size-2",
+        "size-3.5",
+        "size-4"
+      ],
+      "text_content": [
+        "pointer-events-none absolute left-2 flex size-3.5 items-center justify-center",
+        "text-muted-foreground ml-auto text-xs tracking-widest",
+        "px-2 py-1.5 text-sm font-medium data-[inset]:pl-8",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-sm py-1.5 pr-2 pl-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*=",
+        "size-2 fill-current",
+        "bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 max-h-(--radix-dropdown-menu-content-available-height) min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-md border p-1 shadow-md",
+        "ml-auto size-4",
+        "])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*=",
+        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*=",
+        "use client",
+        "bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-hidden rounded-md border p-1 shadow-lg",
+        "bg-border -mx-1 my-1 h-px",
+        "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex cursor-default items-center rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[inset]:pl-8"
+      ],
+      "interactivity": []
+    },
+    "input": {
+      "path": "src/components/ui/input.tsx",
+      "type": "ui_component",
+      "exports": [
+        "Input"
+      ],
+      "imports": [
+        {
+          "names": "cn",
+          "source": "@/lib/utils"
+        },
+        {
+          "names": "React",
+          "source": "react"
+        }
+      ],
+      "ui_elements": [],
+      "styling_classes": [],
+      "text_content": [
+        "aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+        "file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+        "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
+      ],
+      "interactivity": []
+    },
+    "utils": {
+      "path": "src/lib/utils.ts",
+      "type": "utility",
+      "exports": [
+        "cn"
+      ],
+      "imports": [
+        {
+          "names": "clsx, type ClassValue",
+          "source": "clsx"
+        },
+        {
+          "names": "twMerge",
+          "source": "tailwind-merge"
+        }
+      ],
+      "ui_elements": [],
+      "styling_classes": [],
+      "text_content": [],
+      "interactivity": []
+    }
+  },
+  "styling": {
+    "globals": {
+      "path": "src/app/globals.css",
+      "custom_properties": {
+        "color-background": "var(--background)",
+        "color-foreground": "var(--foreground)",
+        "font-sans": "var(--font-geist-sans)",
+        "font-mono": "var(--font-geist-mono)",
+        "color-sidebar-ring": "var(--sidebar-ring)",
+        "color-sidebar-border": "var(--sidebar-border)",
+        "color-sidebar-accent-foreground": "var(--sidebar-accent-foreground)",
+        "color-sidebar-accent": "var(--sidebar-accent)",
+        "color-sidebar-primary-foreground": "var(--sidebar-primary-foreground)",
+        "color-sidebar-primary": "var(--sidebar-primary)",
+        "color-sidebar-foreground": "var(--sidebar-foreground)",
+        "color-sidebar": "var(--sidebar)",
+        "color-chart-5": "var(--chart-5)",
+        "color-chart-4": "var(--chart-4)",
+        "color-chart-3": "var(--chart-3)",
+        "color-chart-2": "var(--chart-2)",
+        "color-chart-1": "var(--chart-1)",
+        "color-ring": "var(--ring)",
+        "color-input": "var(--input)",
+        "color-border": "var(--border)",
+        "color-destructive": "var(--destructive)",
+        "color-accent-foreground": "var(--accent-foreground)",
+        "color-accent": "var(--accent)",
+        "color-muted-foreground": "var(--muted-foreground)",
+        "color-muted": "var(--muted)",
+        "color-secondary-foreground": "var(--secondary-foreground)",
+        "color-secondary": "var(--secondary)",
+        "color-primary-foreground": "var(--primary-foreground)",
+        "color-primary": "var(--primary)",
+        "color-popover-foreground": "var(--popover-foreground)",
+        "color-popover": "var(--popover)",
+        "color-card-foreground": "var(--card-foreground)",
+        "color-card": "var(--card)",
+        "radius-sm": "calc(var(--radius) - 4px)",
+        "radius-md": "calc(var(--radius) - 2px)",
+        "radius-lg": "var(--radius)",
+        "radius-xl": "calc(var(--radius) + 4px)",
+        "color-brand-50": "#eef2ff",
+        "color-brand-100": "#e0e7ff",
+        "color-brand-200": "#c7d2fe",
+        "color-brand-300": "#a5b4fc",
+        "color-brand-400": "#818cf8",
+        "color-brand-500": "#6366f1",
+        "color-brand-600": "#4f46e5",
+        "color-brand-700": "#4338ca",
+        "color-brand-800": "#3730a3",
+        "color-brand-900": "#312e81",
+        "color-brand-DEFAULT": "#6366f1",
+        "color-brand-light": "#818cf8",
+        "color-brand-dark": "#4f46e5",
+        "color-accent-custom-50": "#fdf2f8",
+        "color-accent-custom-100": "#fce7f3",
+        "color-accent-custom-200": "#fbcfe8",
+        "color-accent-custom-300": "#f9a8d4",
+        "color-accent-custom-400": "#f472b6",
+        "color-accent-custom-500": "#ec4899",
+        "color-accent-custom-600": "#db2777",
+        "color-accent-custom-700": "#be185d",
+        "color-accent-custom-800": "#9d174d",
+        "color-accent-custom-900": "#831843",
+        "color-accent-custom-DEFAULT": "#f472b6",
+        "color-accent-custom-light": "#f9a8d4",
+        "color-accent-custom-dark": "#ec4899",
+        "radius": "0.625rem",
+        "background": "oklch(0.145 0 0)",
+        "foreground": "oklch(0.985 0 0)",
+        "card": "oklch(0.205 0 0)",
+        "card-foreground": "oklch(0.985 0 0)",
+        "popover": "oklch(0.205 0 0)",
+        "popover-foreground": "oklch(0.985 0 0)",
+        "primary": "oklch(0.922 0 0)",
+        "primary-foreground": "oklch(0.205 0 0)",
+        "secondary": "oklch(0.269 0 0)",
+        "secondary-foreground": "oklch(0.985 0 0)",
+        "muted": "oklch(0.269 0 0)",
+        "muted-foreground": "oklch(0.708 0 0)",
+        "accent": "oklch(0.269 0 0)",
+        "accent-foreground": "oklch(0.985 0 0)",
+        "destructive": "oklch(0.704 0.191 22.216)",
+        "border": "oklch(1 0 0 / 10%)",
+        "input": "oklch(1 0 0 / 15%)",
+        "ring": "oklch(0.556 0 0)",
+        "chart-1": "oklch(0.488 0.243 264.376)",
+        "chart-2": "oklch(0.696 0.17 162.48)",
+        "chart-3": "oklch(0.769 0.188 70.08)",
+        "chart-4": "oklch(0.627 0.265 303.9)",
+        "chart-5": "oklch(0.645 0.246 16.439)",
+        "sidebar": "oklch(0.205 0 0)",
+        "sidebar-foreground": "oklch(0.985 0 0)",
+        "sidebar-primary": "oklch(0.488 0.243 264.376)",
+        "sidebar-primary-foreground": "oklch(0.985 0 0)",
+        "sidebar-accent": "oklch(0.269 0 0)",
+        "sidebar-accent-foreground": "oklch(0.985 0 0)",
+        "sidebar-border": "oklch(1 0 0 / 10%)",
+        "sidebar-ring": "oklch(0.556 0 0)"
+      },
+      "color_definitions": {
+        "background": "var(--background)",
+        "foreground": "var(--foreground)",
+        "sidebar-ring": "var(--sidebar-ring)",
+        "sidebar-border": "var(--sidebar-border)",
+        "sidebar-accent-foreground": "oklch(0.985 0 0)",
+        "sidebar-accent": "oklch(0.269 0 0)",
+        "sidebar-primary-foreground": "var(--sidebar-primary-foreground)",
+        "sidebar-primary": "var(--sidebar-primary)",
+        "sidebar-foreground": "var(--sidebar-foreground)",
+        "sidebar": "var(--sidebar)",
+        "chart-5": "var(--chart-5)",
+        "chart-4": "var(--chart-4)",
+        "chart-3": "var(--chart-3)",
+        "chart-2": "var(--chart-2)",
+        "chart-1": "var(--chart-1)",
+        "ring": "var(--ring)",
+        "input": "var(--input)",
+        "border": "var(--border)",
+        "destructive": "var(--destructive)",
+        "accent-foreground": "oklch(0.985 0 0)",
+        "accent": "oklch(0.269 0 0)",
+        "muted-foreground": "var(--muted-foreground)",
+        "muted": "var(--muted)",
+        "secondary-foreground": "var(--secondary-foreground)",
+        "secondary": "var(--secondary)",
+        "primary-foreground": "var(--primary-foreground)",
+        "primary": "var(--primary)",
+        "popover-foreground": "var(--popover-foreground)",
+        "popover": "var(--popover)",
+        "card-foreground": "var(--card-foreground)",
+        "card": "var(--card)",
+        "brand-50": "#eef2ff",
+        "brand-100": "#e0e7ff",
+        "brand-200": "#c7d2fe",
+        "brand-300": "#a5b4fc",
+        "brand-400": "#818cf8",
+        "brand-500": "#6366f1",
+        "brand-600": "#4f46e5",
+        "brand-700": "#4338ca",
+        "brand-800": "#3730a3",
+        "brand-900": "#312e81",
+        "brand-DEFAULT": "#6366f1",
+        "brand-light": "#818cf8",
+        "brand-dark": "#4f46e5",
+        "accent-custom-50": "#fdf2f8",
+        "accent-custom-100": "#fce7f3",
+        "accent-custom-200": "#fbcfe8",
+        "accent-custom-300": "#f9a8d4",
+        "accent-custom-400": "#f472b6",
+        "accent-custom-500": "#ec4899",
+        "accent-custom-600": "#db2777",
+        "accent-custom-700": "#be185d",
+        "accent-custom-800": "#9d174d",
+        "accent-custom-900": "#831843",
+        "accent-custom-DEFAULT": "#f472b6",
+        "accent-custom-light": "#f9a8d4",
+        "accent-custom-dark": "#ec4899",
+        "color-background": "var(--background)",
+        "color-foreground": "var(--foreground)",
+        "font-geist-mono);\n  --color-sidebar-ring": "var(--sidebar-ring)",
+        "color-sidebar-border": "var(--sidebar-border)",
+        "color-sidebar-accent-foreground": "var(--sidebar-accent-foreground)",
+        "color-sidebar-accent": "var(--sidebar-accent)",
+        "color-sidebar-primary-foreground": "var(--sidebar-primary-foreground)",
+        "color-sidebar-primary": "var(--sidebar-primary)",
+        "color-sidebar-foreground": "var(--sidebar-foreground)",
+        "color-sidebar": "var(--sidebar)",
+        "color-chart-5": "var(--chart-5)",
+        "color-chart-4": "var(--chart-4)",
+        "color-chart-3": "var(--chart-3)",
+        "color-chart-2": "var(--chart-2)",
+        "color-chart-1": "var(--chart-1)",
+        "color-ring": "var(--ring)",
+        "color-input": "var(--input)",
+        "color-border": "var(--border)",
+        "color-destructive": "var(--destructive)",
+        "color-accent-foreground": "var(--accent-foreground)",
+        "color-accent": "var(--accent)",
+        "color-muted-foreground": "var(--muted-foreground)",
+        "color-muted": "var(--muted)",
+        "color-secondary-foreground": "var(--secondary-foreground)",
+        "color-secondary": "var(--secondary)",
+        "color-primary-foreground": "var(--primary-foreground)",
+        "color-primary": "var(--primary)",
+        "color-popover-foreground": "var(--popover-foreground)",
+        "color-popover": "var(--popover)",
+        "color-card-foreground": "var(--card-foreground)",
+        "color-card": "var(--card)",
+        "radius) + 4px);\n  \n  /* Brand Colors */\n  --color-brand-50": "#eef2ff",
+        "color-brand-100": "#e0e7ff",
+        "color-brand-200": "#c7d2fe",
+        "color-brand-300": "#a5b4fc",
+        "color-brand-400": "#818cf8",
+        "color-brand-500": "#6366f1",
+        "color-brand-600": "#4f46e5",
+        "color-brand-700": "#4338ca",
+        "color-brand-800": "#3730a3",
+        "color-brand-900": "#312e81",
+        "color-brand-DEFAULT": "#6366f1",
+        "color-brand-light": "#818cf8",
+        "color-brand-dark": "#4f46e5",
+        "color-accent-custom-50": "#fdf2f8",
+        "color-accent-custom-100": "#fce7f3",
+        "color-accent-custom-200": "#fbcfe8",
+        "color-accent-custom-300": "#f9a8d4",
+        "color-accent-custom-400": "#f472b6",
+        "color-accent-custom-500": "#ec4899",
+        "color-accent-custom-600": "#db2777",
+        "color-accent-custom-700": "#be185d",
+        "color-accent-custom-800": "#9d174d",
+        "color-accent-custom-900": "#831843",
+        "color-accent-custom-DEFAULT": "#f472b6",
+        "color-accent-custom-light": "#f9a8d4",
+        "color-accent-custom-dark": "#ec4899"
+      },
+      "theme_definitions": {
+        "root": {
+          "radius": "0.625rem",
+          "background": "oklch(1 0 0)",
+          "foreground": "oklch(0.145 0 0)",
+          "card": "oklch(1 0 0)",
+          "card-foreground": "oklch(0.145 0 0)",
+          "popover": "oklch(1 0 0)",
+          "popover-foreground": "oklch(0.145 0 0)",
+          "primary": "oklch(0.205 0 0)",
+          "primary-foreground": "oklch(0.985 0 0)",
+          "secondary": "oklch(0.97 0 0)",
+          "secondary-foreground": "oklch(0.205 0 0)",
+          "muted": "oklch(0.97 0 0)",
+          "muted-foreground": "oklch(0.556 0 0)",
+          "accent": "oklch(0.97 0 0)",
+          "accent-foreground": "oklch(0.205 0 0)",
+          "destructive": "oklch(0.577 0.245 27.325)",
+          "border": "oklch(0.922 0 0)",
+          "input": "oklch(0.922 0 0)",
+          "ring": "oklch(0.708 0 0)",
+          "chart-1": "oklch(0.646 0.222 41.116)",
+          "chart-2": "oklch(0.6 0.118 184.704)",
+          "chart-3": "oklch(0.398 0.07 227.392)",
+          "chart-4": "oklch(0.828 0.189 84.429)",
+          "chart-5": "oklch(0.769 0.188 70.08)",
+          "sidebar": "oklch(0.985 0 0)",
+          "sidebar-foreground": "oklch(0.145 0 0)",
+          "sidebar-primary": "oklch(0.205 0 0)",
+          "sidebar-primary-foreground": "oklch(0.985 0 0)",
+          "sidebar-accent": "oklch(0.97 0 0)",
+          "sidebar-accent-foreground": "oklch(0.205 0 0)",
+          "sidebar-border": "oklch(0.922 0 0)",
+          "sidebar-ring": "oklch(0.708 0 0)"
+        },
+        "dark": {
+          "background": "oklch(0.145 0 0)",
+          "foreground": "oklch(0.985 0 0)",
+          "card": "oklch(0.205 0 0)",
+          "card-foreground": "oklch(0.985 0 0)",
+          "popover": "oklch(0.205 0 0)",
+          "popover-foreground": "oklch(0.985 0 0)",
+          "primary": "oklch(0.922 0 0)",
+          "primary-foreground": "oklch(0.205 0 0)",
+          "secondary": "oklch(0.269 0 0)",
+          "secondary-foreground": "oklch(0.985 0 0)",
+          "muted": "oklch(0.269 0 0)",
+          "muted-foreground": "oklch(0.708 0 0)",
+          "accent": "oklch(0.269 0 0)",
+          "accent-foreground": "oklch(0.985 0 0)",
+          "destructive": "oklch(0.704 0.191 22.216)",
+          "border": "oklch(1 0 0 / 10%)",
+          "input": "oklch(1 0 0 / 15%)",
+          "ring": "oklch(0.556 0 0)",
+          "chart-1": "oklch(0.488 0.243 264.376)",
+          "chart-2": "oklch(0.696 0.17 162.48)",
+          "chart-3": "oklch(0.769 0.188 70.08)",
+          "chart-4": "oklch(0.627 0.265 303.9)",
+          "chart-5": "oklch(0.645 0.246 16.439)",
+          "sidebar": "oklch(0.205 0 0)",
+          "sidebar-foreground": "oklch(0.985 0 0)",
+          "sidebar-primary": "oklch(0.488 0.243 264.376)",
+          "sidebar-primary-foreground": "oklch(0.985 0 0)",
+          "sidebar-accent": "oklch(0.269 0 0)",
+          "sidebar-accent-foreground": "oklch(0.985 0 0)",
+          "sidebar-border": "oklch(1 0 0 / 10%)",
+          "sidebar-ring": "oklch(0.556 0 0)"
+        }
+      },
+      "component_classes": [
+        "dark",
+        "container"
+      ]
+    }
+  },
+  "file_purposes": {
+    "src/app/page.tsx": "Main landing page with hero section, features, and CTA",
+    "src/app/layout.tsx": "Root layout component with global providers",
+    "src/app/globals.css": "Global styles, theme variables, and Tailwind configuration",
+    "src/components/navbar.tsx": "Main navigation component with logo, menu, and theme toggle",
+    "src/components/theme-provider.tsx": "Theme context provider for dark/light mode",
+    "src/components/theme-toggle.tsx": "Theme switcher component (light/dark/system)",
+    "src/components/ui/": "Reusable UI components (buttons, cards, inputs, etc.)",
+    "src/lib/utils.ts": "Utility functions for styling and common operations",
+    "src/components/ui/tabs.tsx": "UI component: tabs",
+    "src/components/ui/card.tsx": "UI component: card",
+    "src/components/ui/sonner.tsx": "UI component: sonner",
+    "src/components/ui/dialog.tsx": "UI component: dialog",
+    "src/components/ui/badge.tsx": "UI component: badge",
+    "src/components/ui/button.tsx": "UI component: button",
+    "src/components/ui/dropdown-menu.tsx": "UI component: dropdown-menu",
+    "src/components/ui/input.tsx": "UI component: input"
+  },
+  "quick_references": {
+    "buttons": [],
+    "colors": {
+      "background": [
+        "Defined in src/app/globals.css: var(--background)",
+        "Used in src/components/navbar.tsx (class: bg-background)",
+        "Used in src/components/navbar.tsx (class: bg-background/95)",
+        "Used in src/components/navbar.tsx (class: supports-[backdrop-filter]:bg-background/60)",
+        "Used in src/components/ui/dialog.tsx (class: ring-offset-background)"
+      ],
+      "foreground": [
+        "Defined in src/app/globals.css: var(--foreground)",
+        "Used in src/app/page.tsx (class: hover:text-foreground)",
+        "Used in src/app/page.tsx (class: text-muted-foreground)",
+        "Used in src/components/navbar.tsx (class: hover:text-foreground/80)",
+        "Used in src/components/navbar.tsx (class: text-foreground/60)",
+        "Used in src/components/ui/dialog.tsx (class: data-[state=open]:text-muted-foreground)"
+      ],
+      "sidebar-ring": [
+        "Defined in src/app/globals.css: var(--sidebar-ring)"
+      ],
+      "sidebar-border": [
+        "Defined in src/app/globals.css: var(--sidebar-border)"
+      ],
+      "sidebar-accent-foreground": [
+        "Defined in src/app/globals.css: oklch(0.985 0 0)"
+      ],
+      "sidebar-accent": [
+        "Defined in src/app/globals.css: oklch(0.269 0 0)"
+      ],
+      "sidebar-primary-foreground": [
+        "Defined in src/app/globals.css: var(--sidebar-primary-foreground)"
+      ],
+      "sidebar-primary": [
+        "Defined in src/app/globals.css: var(--sidebar-primary)"
+      ],
+      "sidebar-foreground": [
+        "Defined in src/app/globals.css: var(--sidebar-foreground)"
+      ],
+      "sidebar": [
+        "Defined in src/app/globals.css: var(--sidebar)"
+      ],
+      "chart-5": [
+        "Defined in src/app/globals.css: var(--chart-5)"
+      ],
+      "chart-4": [
+        "Defined in src/app/globals.css: var(--chart-4)"
+      ],
+      "chart-3": [
+        "Defined in src/app/globals.css: var(--chart-3)"
+      ],
+      "chart-2": [
+        "Defined in src/app/globals.css: var(--chart-2)"
+      ],
+      "chart-1": [
+        "Defined in src/app/globals.css: var(--chart-1)"
+      ],
+      "ring": [
+        "Defined in src/app/globals.css: var(--ring)",
+        "Used in src/components/navbar.tsx (class: focus-visible:ring-0)",
+        "Used in src/components/navbar.tsx (class: focus-visible:ring-offset-0)",
+        "Used in src/components/ui/dialog.tsx (class: focus:ring-2)",
+        "Used in src/components/ui/dialog.tsx (class: focus:ring-offset-2)",
+        "Used in src/components/ui/dialog.tsx (class: focus:ring-ring)",
+        "Used in src/components/ui/dialog.tsx (class: ring-offset-background)"
+      ],
+      "input": [
+        "Defined in src/app/globals.css: var(--input)"
+      ],
+      "border": [
+        "Defined in src/app/globals.css: var(--border)",
+        "Used in src/app/page.tsx (class: border-t)",
+        "Used in src/components/navbar.tsx (class: border-b)",
+        "Used in src/components/navbar.tsx (class: border-border/40)"
+      ],
+      "destructive": [
+        "Defined in src/app/globals.css: var(--destructive)"
+      ],
+      "accent-foreground": [
+        "Defined in src/app/globals.css: oklch(0.985 0 0)"
+      ],
+      "accent": [
+        "Defined in src/app/globals.css: oklch(0.269 0 0)",
+        "Used in src/app/page.tsx (class: bg-accent-custom-100)",
+        "Used in src/app/page.tsx (class: dark:bg-accent-custom-900)",
+        "Used in src/app/page.tsx (class: dark:text-accent-custom-400)",
+        "Used in src/app/page.tsx (class: text-accent-custom-600)",
+        "Used in src/components/ui/dialog.tsx (class: data-[state=open]:bg-accent)"
+      ],
+      "muted-foreground": [
+        "Defined in src/app/globals.css: var(--muted-foreground)",
+        "Used in src/app/page.tsx (class: text-muted-foreground)",
+        "Used in src/components/ui/dialog.tsx (class: data-[state=open]:text-muted-foreground)"
+      ],
+      "muted": [
+        "Defined in src/app/globals.css: var(--muted)",
+        "Used in src/app/page.tsx (class: bg-muted/50)",
+        "Used in src/app/page.tsx (class: text-muted-foreground)",
+        "Used in src/components/ui/dialog.tsx (class: data-[state=open]:text-muted-foreground)"
+      ],
+      "secondary-foreground": [
+        "Defined in src/app/globals.css: var(--secondary-foreground)"
+      ],
+      "secondary": [
+        "Defined in src/app/globals.css: var(--secondary)"
+      ],
+      "primary-foreground": [
+        "Defined in src/app/globals.css: var(--primary-foreground)"
+      ],
+      "primary": [
+        "Defined in src/app/globals.css: var(--primary)"
+      ],
+      "popover-foreground": [
+        "Defined in src/app/globals.css: var(--popover-foreground)"
+      ],
+      "popover": [
+        "Defined in src/app/globals.css: var(--popover)"
+      ],
+      "card-foreground": [
+        "Defined in src/app/globals.css: var(--card-foreground)"
+      ],
+      "card": [
+        "Defined in src/app/globals.css: var(--card)"
+      ],
+      "brand-50": [
+        "Defined in src/app/globals.css: #eef2ff",
+        "Used in src/app/page.tsx (class: bg-brand-500)",
+        "Used in src/app/page.tsx (class: text-brand-500)",
+        "Used in src/components/navbar.tsx (class: bg-brand-500)"
+      ],
+      "brand-100": [
+        "Defined in src/app/globals.css: #e0e7ff",
+        "Used in src/app/page.tsx (class: bg-brand-100)"
+      ],
+      "brand-200": [
+        "Defined in src/app/globals.css: #c7d2fe"
+      ],
+      "brand-300": [
+        "Defined in src/app/globals.css: #a5b4fc"
+      ],
+      "brand-400": [
+        "Defined in src/app/globals.css: #818cf8",
+        "Used in src/app/page.tsx (class: dark:text-brand-400)",
+        "Used in src/components/navbar.tsx (class: dark:text-brand-400)"
+      ],
+      "brand-500": [
+        "Defined in src/app/globals.css: #6366f1",
+        "Used in src/app/page.tsx (class: bg-brand-500)",
+        "Used in src/app/page.tsx (class: text-brand-500)",
+        "Used in src/components/navbar.tsx (class: bg-brand-500)"
+      ],
+      "brand-600": [
+        "Defined in src/app/globals.css: #4f46e5",
+        "Used in src/app/page.tsx (class: hover:bg-brand-600)",
+        "Used in src/app/page.tsx (class: text-brand-600)",
+        "Used in src/components/navbar.tsx (class: hover:bg-brand-600)",
+        "Used in src/components/navbar.tsx (class: text-brand-600)"
+      ],
+      "brand-700": [
+        "Defined in src/app/globals.css: #4338ca"
+      ],
+      "brand-800": [
+        "Defined in src/app/globals.css: #3730a3"
+      ],
+      "brand-900": [
+        "Defined in src/app/globals.css: #312e81",
+        "Used in src/app/page.tsx (class: dark:bg-brand-900)"
+      ],
+      "brand-DEFAULT": [
+        "Defined in src/app/globals.css: #6366f1"
+      ],
+      "brand-light": [
+        "Defined in src/app/globals.css: #818cf8"
+      ],
+      "brand-dark": [
+        "Defined in src/app/globals.css: #4f46e5"
+      ],
+      "accent-custom-50": [
+        "Defined in src/app/globals.css: #fdf2f8"
+      ],
+      "accent-custom-100": [
+        "Defined in src/app/globals.css: #fce7f3",
+        "Used in src/app/page.tsx (class: bg-accent-custom-100)"
+      ],
+      "accent-custom-200": [
+        "Defined in src/app/globals.css: #fbcfe8"
+      ],
+      "accent-custom-300": [
+        "Defined in src/app/globals.css: #f9a8d4"
+      ],
+      "accent-custom-400": [
+        "Defined in src/app/globals.css: #f472b6",
+        "Used in src/app/page.tsx (class: dark:text-accent-custom-400)"
+      ],
+      "accent-custom-500": [
+        "Defined in src/app/globals.css: #ec4899"
+      ],
+      "accent-custom-600": [
+        "Defined in src/app/globals.css: #db2777",
+        "Used in src/app/page.tsx (class: text-accent-custom-600)"
+      ],
+      "accent-custom-700": [
+        "Defined in src/app/globals.css: #be185d"
+      ],
+      "accent-custom-800": [
+        "Defined in src/app/globals.css: #9d174d"
+      ],
+      "accent-custom-900": [
+        "Defined in src/app/globals.css: #831843",
+        "Used in src/app/page.tsx (class: dark:bg-accent-custom-900)"
+      ],
+      "accent-custom-DEFAULT": [
+        "Defined in src/app/globals.css: #f472b6"
+      ],
+      "accent-custom-light": [
+        "Defined in src/app/globals.css: #f9a8d4"
+      ],
+      "accent-custom-dark": [
+        "Defined in src/app/globals.css: #ec4899"
+      ],
+      "color-background": [
+        "Defined in src/app/globals.css: var(--background)"
+      ],
+      "color-foreground": [
+        "Defined in src/app/globals.css: var(--foreground)"
+      ],
+      "font-geist-mono);\n  --color-sidebar-ring": [
+        "Defined in src/app/globals.css: var(--sidebar-ring)"
+      ],
+      "color-sidebar-border": [
+        "Defined in src/app/globals.css: var(--sidebar-border)"
+      ],
+      "color-sidebar-accent-foreground": [
+        "Defined in src/app/globals.css: var(--sidebar-accent-foreground)"
+      ],
+      "color-sidebar-accent": [
+        "Defined in src/app/globals.css: var(--sidebar-accent)"
+      ],
+      "color-sidebar-primary-foreground": [
+        "Defined in src/app/globals.css: var(--sidebar-primary-foreground)"
+      ],
+      "color-sidebar-primary": [
+        "Defined in src/app/globals.css: var(--sidebar-primary)"
+      ],
+      "color-sidebar-foreground": [
+        "Defined in src/app/globals.css: var(--sidebar-foreground)"
+      ],
+      "color-sidebar": [
+        "Defined in src/app/globals.css: var(--sidebar)"
+      ],
+      "color-chart-5": [
+        "Defined in src/app/globals.css: var(--chart-5)"
+      ],
+      "color-chart-4": [
+        "Defined in src/app/globals.css: var(--chart-4)"
+      ],
+      "color-chart-3": [
+        "Defined in src/app/globals.css: var(--chart-3)"
+      ],
+      "color-chart-2": [
+        "Defined in src/app/globals.css: var(--chart-2)"
+      ],
+      "color-chart-1": [
+        "Defined in src/app/globals.css: var(--chart-1)"
+      ],
+      "color-ring": [
+        "Defined in src/app/globals.css: var(--ring)"
+      ],
+      "color-input": [
+        "Defined in src/app/globals.css: var(--input)"
+      ],
+      "color-border": [
+        "Defined in src/app/globals.css: var(--border)"
+      ],
+      "color-destructive": [
+        "Defined in src/app/globals.css: var(--destructive)"
+      ],
+      "color-accent-foreground": [
+        "Defined in src/app/globals.css: var(--accent-foreground)"
+      ],
+      "color-accent": [
+        "Defined in src/app/globals.css: var(--accent)"
+      ],
+      "color-muted-foreground": [
+        "Defined in src/app/globals.css: var(--muted-foreground)"
+      ],
+      "color-muted": [
+        "Defined in src/app/globals.css: var(--muted)"
+      ],
+      "color-secondary-foreground": [
+        "Defined in src/app/globals.css: var(--secondary-foreground)"
+      ],
+      "color-secondary": [
+        "Defined in src/app/globals.css: var(--secondary)"
+      ],
+      "color-primary-foreground": [
+        "Defined in src/app/globals.css: var(--primary-foreground)"
+      ],
+      "color-primary": [
+        "Defined in src/app/globals.css: var(--primary)"
+      ],
+      "color-popover-foreground": [
+        "Defined in src/app/globals.css: var(--popover-foreground)"
+      ],
+      "color-popover": [
+        "Defined in src/app/globals.css: var(--popover)"
+      ],
+      "color-card-foreground": [
+        "Defined in src/app/globals.css: var(--card-foreground)"
+      ],
+      "color-card": [
+        "Defined in src/app/globals.css: var(--card)"
+      ],
+      "radius) + 4px);\n  \n  /* Brand Colors */\n  --color-brand-50": [
+        "Defined in src/app/globals.css: #eef2ff"
+      ],
+      "color-brand-100": [
+        "Defined in src/app/globals.css: #e0e7ff"
+      ],
+      "color-brand-200": [
+        "Defined in src/app/globals.css: #c7d2fe"
+      ],
+      "color-brand-300": [
+        "Defined in src/app/globals.css: #a5b4fc"
+      ],
+      "color-brand-400": [
+        "Defined in src/app/globals.css: #818cf8"
+      ],
+      "color-brand-500": [
+        "Defined in src/app/globals.css: #6366f1"
+      ],
+      "color-brand-600": [
+        "Defined in src/app/globals.css: #4f46e5"
+      ],
+      "color-brand-700": [
+        "Defined in src/app/globals.css: #4338ca"
+      ],
+      "color-brand-800": [
+        "Defined in src/app/globals.css: #3730a3"
+      ],
+      "color-brand-900": [
+        "Defined in src/app/globals.css: #312e81"
+      ],
+      "color-brand-DEFAULT": [
+        "Defined in src/app/globals.css: #6366f1"
+      ],
+      "color-brand-light": [
+        "Defined in src/app/globals.css: #818cf8"
+      ],
+      "color-brand-dark": [
+        "Defined in src/app/globals.css: #4f46e5"
+      ],
+      "color-accent-custom-50": [
+        "Defined in src/app/globals.css: #fdf2f8"
+      ],
+      "color-accent-custom-100": [
+        "Defined in src/app/globals.css: #fce7f3"
+      ],
+      "color-accent-custom-200": [
+        "Defined in src/app/globals.css: #fbcfe8"
+      ],
+      "color-accent-custom-300": [
+        "Defined in src/app/globals.css: #f9a8d4"
+      ],
+      "color-accent-custom-400": [
+        "Defined in src/app/globals.css: #f472b6"
+      ],
+      "color-accent-custom-500": [
+        "Defined in src/app/globals.css: #ec4899"
+      ],
+      "color-accent-custom-600": [
+        "Defined in src/app/globals.css: #db2777"
+      ],
+      "color-accent-custom-700": [
+        "Defined in src/app/globals.css: #be185d"
+      ],
+      "color-accent-custom-800": [
+        "Defined in src/app/globals.css: #9d174d"
+      ],
+      "color-accent-custom-900": [
+        "Defined in src/app/globals.css: #831843"
+      ],
+      "color-accent-custom-DEFAULT": [
+        "Defined in src/app/globals.css: #f472b6"
+      ],
+      "color-accent-custom-light": [
+        "Defined in src/app/globals.css: #f9a8d4"
+      ],
+      "color-accent-custom-dark": [
+        "Defined in src/app/globals.css: #ec4899"
+      ]
+    },
+    "navigation": [
+      {
+        "type": "navigation_component",
+        "file": "src/components/navbar.tsx",
+        "component": "navbar",
+        "links": [],
+        "buttons": []
+      }
+    ],
+    "headings": [],
+    "forms": [],
+    "theme_elements": {
+      "theme_toggle": [
+        {
+          "file": "src/components/theme-provider.tsx",
+          "component": "theme-provider"
+        },
+        {
+          "file": "src/components/theme-toggle.tsx",
+          "component": "theme-toggle"
+        }
+      ],
+      "theme_variables": {
+        "root": {
+          "radius": "0.625rem",
+          "background": "oklch(1 0 0)",
+          "foreground": "oklch(0.145 0 0)",
+          "card": "oklch(1 0 0)",
+          "card-foreground": "oklch(0.145 0 0)",
+          "popover": "oklch(1 0 0)",
+          "popover-foreground": "oklch(0.145 0 0)",
+          "primary": "oklch(0.205 0 0)",
+          "primary-foreground": "oklch(0.985 0 0)",
+          "secondary": "oklch(0.97 0 0)",
+          "secondary-foreground": "oklch(0.205 0 0)",
+          "muted": "oklch(0.97 0 0)",
+          "muted-foreground": "oklch(0.556 0 0)",
+          "accent": "oklch(0.97 0 0)",
+          "accent-foreground": "oklch(0.205 0 0)",
+          "destructive": "oklch(0.577 0.245 27.325)",
+          "border": "oklch(0.922 0 0)",
+          "input": "oklch(0.922 0 0)",
+          "ring": "oklch(0.708 0 0)",
+          "chart-1": "oklch(0.646 0.222 41.116)",
+          "chart-2": "oklch(0.6 0.118 184.704)",
+          "chart-3": "oklch(0.398 0.07 227.392)",
+          "chart-4": "oklch(0.828 0.189 84.429)",
+          "chart-5": "oklch(0.769 0.188 70.08)",
+          "sidebar": "oklch(0.985 0 0)",
+          "sidebar-foreground": "oklch(0.145 0 0)",
+          "sidebar-primary": "oklch(0.205 0 0)",
+          "sidebar-primary-foreground": "oklch(0.985 0 0)",
+          "sidebar-accent": "oklch(0.97 0 0)",
+          "sidebar-accent-foreground": "oklch(0.205 0 0)",
+          "sidebar-border": "oklch(0.922 0 0)",
+          "sidebar-ring": "oklch(0.708 0 0)"
+        },
+        "dark": {
+          "background": "oklch(0.145 0 0)",
+          "foreground": "oklch(0.985 0 0)",
+          "card": "oklch(0.205 0 0)",
+          "card-foreground": "oklch(0.985 0 0)",
+          "popover": "oklch(0.205 0 0)",
+          "popover-foreground": "oklch(0.985 0 0)",
+          "primary": "oklch(0.922 0 0)",
+          "primary-foreground": "oklch(0.205 0 0)",
+          "secondary": "oklch(0.269 0 0)",
+          "secondary-foreground": "oklch(0.985 0 0)",
+          "muted": "oklch(0.269 0 0)",
+          "muted-foreground": "oklch(0.708 0 0)",
+          "accent": "oklch(0.269 0 0)",
+          "accent-foreground": "oklch(0.985 0 0)",
+          "destructive": "oklch(0.704 0.191 22.216)",
+          "border": "oklch(1 0 0 / 10%)",
+          "input": "oklch(1 0 0 / 15%)",
+          "ring": "oklch(0.556 0 0)",
+          "chart-1": "oklch(0.488 0.243 264.376)",
+          "chart-2": "oklch(0.696 0.17 162.48)",
+          "chart-3": "oklch(0.769 0.188 70.08)",
+          "chart-4": "oklch(0.627 0.265 303.9)",
+          "chart-5": "oklch(0.645 0.246 16.439)",
+          "sidebar": "oklch(0.205 0 0)",
+          "sidebar-foreground": "oklch(0.985 0 0)",
+          "sidebar-primary": "oklch(0.488 0.243 264.376)",
+          "sidebar-primary-foreground": "oklch(0.985 0 0)",
+          "sidebar-accent": "oklch(0.269 0 0)",
+          "sidebar-accent-foreground": "oklch(0.985 0 0)",
+          "sidebar-border": "oklch(1 0 0 / 10%)",
+          "sidebar-ring": "oklch(0.556 0 0)"
+        }
+      },
+      "dark_mode_classes": []
+    }
+  }
+}
