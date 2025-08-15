@@ -1,21 +1,17 @@
 "use client"
-
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
-
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Features", href: "#features" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
   ]
-
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
@@ -38,7 +34,6 @@ export function Navbar() {
             ))}
           </nav>
         </div>
-        
         {/* Mobile menu button */}
         <Button
           variant="ghost"
@@ -48,7 +43,6 @@ export function Navbar() {
           <Menu className="h-5 w-5" />
           <span className="sr-only">Toggle Menu</span>
         </Button>
-        
         {/* Mobile brand */}
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none">
@@ -70,7 +64,6 @@ export function Navbar() {
           </nav>
         </div>
       </div>
-      
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="fixed inset-0 top-14 z-50 grid h-[calc(100vh-3.5rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden bg-background">
