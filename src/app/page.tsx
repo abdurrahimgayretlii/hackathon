@@ -14,7 +14,7 @@ export default function Home() {
             <div className="space-y-2">
               <Badge variant="secondary" className="mb-4">
                 <Sparkles className="h-3 w-3 mr-1" />
-                Ready for Hackathons
+                Ready for Hackathons sadas
               </Badge>
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                 Build Amazing Projects with{" "}
